@@ -12,4 +12,10 @@ class ProductController extends Controller
         return view('products.index')
             ->with('products', Product::get());
     }
+
+    public function show($id)
+    {
+        return view('products.show')
+            ->with('product', Product::find($id));
+    }
 }
