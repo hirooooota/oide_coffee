@@ -15,9 +15,12 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+// Route::get('/', function () {
+//     return view('profile.welcome');
+// })->name('welcome');
+
+Route::get('/', [ProductController::class, 'index'])
+    ->name('products.index');
 
 Route::middleware([
     'auth:sanctum',
@@ -29,5 +32,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/', [ProductController::class, 'index'])
-    ->name('product.index');
+Route::resource('products', ProductController::class)
+    ->only(['show', 'index']);

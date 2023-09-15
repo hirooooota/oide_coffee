@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view('product.index')
+        return view('products.index')
             ->with('products', Product::get());
     }
 }
