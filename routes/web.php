@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\LineItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,16 @@ Route::middleware([
 
 Route::resource('products', ProductController::class)
     ->only(['show', 'index']);
+    
+
+// Route::name('product.')
+//     ->group(function(){
+//         Route::get('/','ProductController@index')->name('index');
+//         Route::get('product/{id}','ProductController@show')->name('show');
+//     });
+
+// Route::name('line_item.')
+    // ->group(function () {
+    //     Route::post('/line_item/create', 'LineItemController@create')->name('create');
+    // });
+Route::post('/line_item/create',[LineItemController::class ,'create']);
