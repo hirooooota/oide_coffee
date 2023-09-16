@@ -34,3 +34,5 @@ Route::middleware([
 
 Route::resource('products', ProductController::class)
     ->only(['show', 'index']);
+
+Route::get('/cart/checkout', 'checkout')->name('checkout');
