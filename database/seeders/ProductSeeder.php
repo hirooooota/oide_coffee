@@ -68,6 +68,7 @@ class ProductSeeder extends Seeder
                 'image' => '/images/9.jpg',
                 'price' => '4500'
             ],
+            
         ]);
     }
 }

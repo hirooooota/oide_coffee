@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\LineItemController;
 
 use Illuminate\Http\Request;
 
@@ -36,6 +38,25 @@ Route::middleware([
 
 Route::resource('products', ProductController::class)
     ->only(['show', 'index']);
+
+// Route::name('product.')
+//     ->group(function(){
+//         Route::get('/','ProductController@index')->name('index');
+//         Route::get('product/{id}','ProductController@show')->name('show');
+//     });
+
+// Route::name('line_item.')
+    // ->group(function () {
+    //     Route::post('/line_item/create', 'LineItemController@create')->name('create');
+    // });
+Route::post('/line_item/create',[LineItemController::class ,'create']);
+
+
+// Route::get('cart.index')->get('/cart', 'CartController@index');
+Route::get('/cart',[CartController::class ,'index'])
+    ->name('cart_index');
+Route::post('/line_item/delete',[LineItemController::class ,'delete'])
+    ->name('cart_delete');
 
 //ユーザー側
 Route::prefix('{lang}')->where(['lang' => 'ja|en'])->group(function() {

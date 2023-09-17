@@ -91,7 +91,7 @@
                     </x-slot>
                 </x-dropdown>
 
-                <a class="pl-3 inline-block no-underline hover:text-black" href="#">
+                <a class="pl-3 inline-block no-underline hover:text-black" href="/cart">
                     <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24">
                         <path
