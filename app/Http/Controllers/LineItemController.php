@@ -27,7 +27,9 @@ class LineItemController extends Controller
         }
         // return redirect(route('cart.index'));
         // dd($line_item);
-        return view('cart.index', compact('line_item'));
+        
+        // return view('cart.index', compact('line_item'));
+        return redirect(route('cart_index'));
     }
 
     public function delete(Request $request)

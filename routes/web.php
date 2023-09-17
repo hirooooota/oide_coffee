@@ -36,7 +36,7 @@ Route::middleware([
 
 Route::resource('products', ProductController::class)
     ->only(['show', 'index']);
-    
+
 
 // Route::name('product.')
 //     ->group(function(){
@@ -45,13 +45,14 @@ Route::resource('products', ProductController::class)
 //     });
 
 // Route::name('line_item.')
-    // ->group(function () {
-    //     Route::post('/line_item/create', 'LineItemController@create')->name('create');
-    // });
-Route::post('/line_item/create',[LineItemController::class ,'create']);
+// ->group(function () {
+//     Route::post('/line_item/create', 'LineItemController@create')->name('create');
+// });
+Route::post('/line_item/create', [LineItemController::class, 'create'])
+    ->name('line_item_create');
 
 
 // Route::get('cart.index')->get('/cart', 'CartController@index');
-Route::get('/carts',[CartController::class ,'index']);
-Route::post('/line_item/delete',[LineItemController::class ,'delete']);
-
+Route::get('/cart', [CartController::class, 'index'])
+    ->name('cart_index');
+Route::post('/line_item/delete', [LineItemController::class, 'delete']);

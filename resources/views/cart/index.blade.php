@@ -3,7 +3,9 @@
         <div class="cart__title">
             Shopping Cart
         </div>
-        @if (count($line_items) > 0)
+        {{-- @if (count($line_items) > 0) --}}
+        @if ($line_items && $line_items->count() > 0)
+
             <div class="cart-wrapper">
                 @foreach ($line_items as $item)
                     <div class="card mb-3">
