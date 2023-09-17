@@ -25,6 +25,14 @@ class LineItemController extends Controller
                 'quantity' => $request->input('quantity'),
             ]);
         }
-        return redirect(route('product.index'));
+        // return redirect(route('cart.index'));
+        // dd($line_item);
+        return view('cart.index', compact('line_item'));
+    }
+
+    public function delete(Request $request)
+    {
+        LineItem::destroy($request->input('id'));
+            return view('cart.index');
     }
 }

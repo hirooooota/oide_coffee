@@ -13,7 +13,7 @@
                     {{ $product->description }}
                     <form method="POST" action="/line_item/create">
                         @csrf
-                        <input type="hidden" name="id" value=""{{ $product->id }} />
+                        <input type="hidden" name="id" value="{{ $product->id }}"/>
                         <div class="product__quantity">
                             <input type="number" name="quantity" min="1" value="1" require />
                         </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductController;
@@ -48,3 +49,9 @@ Route::resource('products', ProductController::class)
     //     Route::post('/line_item/create', 'LineItemController@create')->name('create');
     // });
 Route::post('/line_item/create',[LineItemController::class ,'create']);
+
+
+// Route::get('cart.index')->get('/cart', 'CartController@index');
+Route::get('/carts',[CartController::class ,'index']);
+Route::post('/line_item/delete',[LineItemController::class ,'delete']);
+
