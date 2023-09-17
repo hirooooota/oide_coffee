@@ -54,7 +54,6 @@ Route::post('/line_item/create',[LineItemController::class ,'create']);
 // Route::get('cart.index')->get('/cart', 'CartController@index');
 Route::get('/cart',[CartController::class ,'index'])
     ->name('cart_index');
-
 Route::post('/line_item/delete',[LineItemController::class ,'delete'])
     ->name('cart_delete');
 
