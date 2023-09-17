@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LineItemController;
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +39,6 @@ Route::middleware([
 Route::resource('products', ProductController::class)
     ->only(['show', 'index']);
 
-
 // Route::name('product.')
 //     ->group(function(){
 //         Route::get('/','ProductController@index')->name('index');
@@ -53,10 +54,37 @@ Route::post('/line_item/create', [LineItemController::class, 'create'])
 
 
 // Route::get('cart.index')->get('/cart', 'CartController@index');
-
 Route::get('/cart',[CartController::class ,'index'])
     ->name('cart_index');
 
 Route::post('/line_item/delete',[LineItemController::class ,'delete'])
     ->name('cart_delete');
 
+//ユーザー側
+Route::prefix('{lang}')->where(['lang' => 'ja|en'])->group(function() {
+    Route::get('demo/{param?}', function(){
+        return view ('demo');
+    });
+});
+
+// 404 Not Found
+Route::fallback(function(Request $request){
+    $route = Route::getCurrentRoute();
+    // WEB側画面
+    if( empty($route->getPrefix()) ){
+        $fallback = $route->parameter('fallbackPlaceholder');
+        // 言語用Prefixが存在しない場合、言語を設定してリダイレクトする
+        if( $fallback === null || (strpos($fallback, 'ja') === false && strpos($fallback, 'en') === false) ){
+            $path = $request->getPathInfo();
+            return redirect('/ja'.$path);
+        }
+    }
+    return abort(404);
+});
+
+Route::controller(CartController::class)->group(function() {
+    Route::name('cart.')->group(function () {
+        Route::get('/cart', 'index')->name('index');
+        Route::get('/cart/checkout', 'checkout')->name('checkout');
+    });
+});
