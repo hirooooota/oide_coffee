@@ -28,6 +28,7 @@ class LineItemController extends Controller
         }
         // return redirect(route('cart.index'));
         // dd($line_item);
+
         return redirect(route('cart_index'));
         // ->with('line_items', LineItem::get()); 
     }
