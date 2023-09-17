@@ -18,6 +18,7 @@ class LineItemController extends Controller
         if ($line_item) {
             $line_item->quantity += $request->input('quantity');
             $line_item->save();
+            // dd($line_item);
         } else {
             LineItem::create([
                 'cart_id' => $cart_id,
@@ -27,12 +28,13 @@ class LineItemController extends Controller
         }
         // return redirect(route('cart.index'));
         // dd($line_item);
-        return view('cart.index', compact('line_item'));
+        return redirect(route('cart_index'));
+        // ->with('line_items', LineItem::get()); 
     }
 
     public function delete(Request $request)
     {
         LineItem::destroy($request->input('id'));
-            return view('cart.index');
+        return redirect(route('cart_index'));
     }
 }
