@@ -59,9 +59,9 @@ public function checkout()
             'mode'                 => 'payment',
         ]);
 
-       return view('cart.checkout',[
+    return view('cart.checkout',[
             'session' => $session,
             'publicKey' => env('STRIPE_PUBLIC_KEY')
-       ]);
+    ]);
     }
 }
