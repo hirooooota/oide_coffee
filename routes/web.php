@@ -85,5 +85,6 @@ Route::fallback(function (Request $request) {
 Route::controller(CartController::class)->group(function () {
     Route::name('cart.')->group(function () {
         Route::get('/cart/checkout', 'checkout')->name('checkout');
+        Route::get('/cart/success', 'success')->name('success');
     });
 });
