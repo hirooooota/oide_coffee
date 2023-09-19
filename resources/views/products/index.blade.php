@@ -169,24 +169,24 @@ Alternatively if you want to just have a single hero
                 About
             </a>
 
-            <p class="mt-8 mb-8">This template is inspired by the stunning nordic minimalist design - in particular:
+            <p class="mt-8 mb-8">特別なコーヒー体験を
                 <br>
-                <a class="text-gray-800 underline hover:text-gray-900" href="http://savoy.nordicmade.com/"
-                    target="_blank">Savoy Theme</a> created by <a class="text-gray-800 underline hover:text-gray-900"
-                    href="https://nordicmade.com/">https://nordicmade.com/</a> and <a
-                    class="text-gray-800 underline hover:text-gray-900" href="https://www.metricdesign.no/"
-                    target="_blank">https://www.metricdesign.no/</a>
+
             </p>
 
-            <p class="mb-8">Lorem ipsum dolor sit amet, consectetur <a href="#">random link</a> adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel risus commodo viverra
-                maecenas accumsan lacus vel facilisis volutpat. Vitae aliquet nec ullamcorper sit. Nullam eget felis
-                eget nunc lobortis mattis aliquam. In est ante in nibh mauris. Egestas congue quisque egestas diam in.
-                Facilisi nullam vehicula ipsum a arcu. Nec nam aliquam sem et tortor consequat. Eget mi proin sed libero
-                enim sed faucibus turpis in. Hac habitasse platea dictumst quisque. In aliquam sem fringilla ut. Gravida
-                rutrum quisque non tellus orci ac auctor augue mauris. Accumsan lacus vel facilisis volutpat est velit
-                egestas dui id. At tempor commodo ullamcorper a. Volutpat commodo sed egestas egestas fringilla. Vitae
-                congue eu consequat ac.</p>
+            <p class="mb-8">
+            <p>焙煎は、コーヒー豆の味わいにおいて非常に大切なプロセスです。豆が持つ潜在的な素材の力、焙煎日の気温、湿度、気候など、さまざまな要因に注意を払います。
+            </p>
+            <br>
+            <p>ただし、一番大切にしているのは、わたし自身が心から楽しんで飲みたい、そしてずっと愛し続けられるコーヒーを創り出すことです。</p>
+            <br>
+            <p>OIDE COFFEEが焙煎するコーヒーは、単なる飲み物ではなく、豊かな体験そのものとして、あなたの心に寄り添えることを願っています。</p>
+
+
+
+
+
+            </p>
 
         </div>
 
@@ -197,10 +197,9 @@ Alternatively if you want to just have a single hero
             <div class="w-full mx-auto flex flex-wrap">
                 <div class="flex w-full lg:w-1/2 ">
                     <div class="px-3 md:px-0">
-                        <h3 class="font-bold text-gray-900">About</h3>
+                        <h3 class="font-bold text-gray-900">OIDE COFFEE</h3>
                         <p class="py-4">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus
-                            commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
+                            実店舗を持たず、イベント出店を中心に行なっています。最新スケジュールはSNSをご覧ください。
                         </p>
                     </div>
                 </div>
@@ -242,6 +241,7 @@ Alternatively if you want to just have a single hero
                 </div>
             </div>
         </div>
+        <small>&copy; 2023 OOIDE COFFEE All rights reserved.</small>
     </footer>
 
     </body>
