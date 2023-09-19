@@ -18,7 +18,7 @@
                         <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
                                 href="{{ route('products.index') }}">Shop</a></li>
                         <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
-                                href="#">About</a></li>
+                                href="#aboutSection">About</a></li>
                     </ul>
                 </nav>
             </div>
