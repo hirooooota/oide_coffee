@@ -1,20 +1,21 @@
 <style>
-    .cart__purchase {
-        background-color: rgb(251, 255, 0);
-        color: black;
-        border: 0.1px solid rgb(48, 47, 47);
-        /* 極細の境界線を追加 */
-        border-radius: 0.25rem;
-        transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-        /* 影を薄く */
+    .custom-button {
+        margin-top: 10px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 1rem;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
     }
 
-    .cart__purchase:hover {
-        background-color: rgb(255, 255, 0);
-        /* ホバー時の背景色 */
-        box-shadow: 0px 4px 4px rgba(115, 103, 103, 0.4);
-        /* ホバー時の影を変更 */
+    .custom-button:hover {
+        background-color: rgb(251, 255, 0);
+        color: black;
     }
 </style>
 
@@ -54,10 +55,8 @@
                     小計：￥{{ number_format($total_price) }}
                 </div>
 
-                <div class="text-center"> <!-- 親要素に text-center クラスを追加 -->
-                    <button onClick="location.href='{{ route('cart.checkout') }}'"
-                        class="cart__purchase py-2 px-4 mb-8 text-lg"
-                        style="background-color: rgb(251, 255, 0); color: black; border-radius: 1rem; transition: background-color 0.2s ease-in-out;">
+                <div class="text-center">
+                    <button onClick="location.href='{{ route('cart.checkout') }}'" class="custom-button">
                         購入する
                     </button>
                 </div>
