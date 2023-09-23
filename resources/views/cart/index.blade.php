@@ -2,16 +2,18 @@
     .cart__purchase {
         background-color: rgb(251, 255, 0);
         color: black;
-        border-radius: 1rem;
+        border: 0.1px solid rgb(48, 47, 47);
+        /* 極細の境界線を追加 */
+        border-radius: 0.25rem;
         transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-        /* 影を追加 */
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        /* 影を薄く */
     }
 
     .cart__purchase:hover {
         background-color: rgb(255, 255, 0);
         /* ホバー時の背景色 */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 4px 4px rgba(115, 103, 103, 0.4);
         /* ホバー時の影を変更 */
     }
 </style>
