@@ -15,7 +15,8 @@
                     <div class="container mx-auto">
                         <div
                             class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                            <p class="text-black text-2xl my-4">{{ $randomProducts[0]->description }}</p>
+                            <p class="text-black text-2xl my-4 text-white-outline">{{ $randomProducts[0]->description }}
+                            </p>
                             <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="{{ route('products.show', $randomProducts[0]->id) }}">view product</a>
                         </div>
@@ -36,7 +37,8 @@
                     <div class="container mx-auto">
                         <div
                             class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                            <p class="text-black text-2xl my-4">{{ $randomProducts[1]->description }}</p>
+                            <p class="text-black text-2xl my-4 text-white-outline">{{ $randomProducts[1]->description }}
+                            </p>
                             <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="{{ route('products.show', $randomProducts[1]->id) }}">view product</a>
                         </div>
@@ -57,7 +59,8 @@
                     <div class="container mx-auto">
                         <div
                             class="flex flex-col w-full lg:w-1/2 md:ml-16 items-center md:items-start px-6 tracking-wide">
-                            <p class="text-black text-2xl my-4">{{ $randomProducts[2]->description }}</p>
+                            <p class="text-black text-2xl my-4 text-white-outline">{{ $randomProducts[2]->description }}
+                            </p>
                             <a class="text-xl inline-block no-underline border-b border-gray-600 leading-relaxed hover:text-black hover:border-black"
                                 href="{{ route('products.show', $randomProducts[2]->id) }}">view product</a>
                         </div>
