@@ -4,7 +4,7 @@
     @endsection
 
     @section('content')
-        <div class="container">
+        <div class="container mx-auto">
             <div class="cart__title text-2xl font-bold mb-4">ショッピングカート</div>
 
             @if (count($line_items) > 0)
