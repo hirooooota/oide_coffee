@@ -16,9 +16,9 @@
                 <nav>
                     <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
                         <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
-                                href="{{ route('products.index') }}">Shop</a></li>
-                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
                                 href="#aboutSection">About</a></li>
+                        <li><a class="inline-block no-underline hover:text-black hover:underline py-2 px-4"
+                                href="{{ route('index') }}">お問合せ</a></li>
                     </ul>
                 </nav>
             </div>
