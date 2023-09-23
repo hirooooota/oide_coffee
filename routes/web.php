@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\LineItemController;
+// use App\Http\Controllers\ContactController;
 
 use Illuminate\Http\Request;
 
@@ -88,3 +89,9 @@ Route::controller(CartController::class)->group(function () {
         Route::get('/cart/success', 'success')->name('success');
     });
 });
+
+Route::get('/contact', 'App\Http\Controllers\ContactController@index')->name('index');
+//確認ページ
+Route::post('/contact/confirm', 'App\Http\Controllers\ContactController@confirm')->name('confirm');
+//送信完了ページ
+Route::post('/contact/thanks', 'App\Http\Controllers\ContactController@send')->name('send');
