@@ -201,6 +201,11 @@ Alternatively if you want to just have a single hero
                         </p>
                     </div>
                 </div>
+                <div class="flex w-full lg:w-1/2 ">
+                    <div class="px-3 md:px-0">
+                        <h3 class="font-bold text-gray-900"><a href="{{ route('index') }}">お問合せ</a></h3>
+                    </div>
+                </div>
                 <div class="flex w-full lg:w-1/2 lg:justify-end lg:text-right mt-6 md:mt-0">
                     <div class="px-3 md:px-0">
                         <h3 class="text-left font-bold text-gray-900">Social</h3>
