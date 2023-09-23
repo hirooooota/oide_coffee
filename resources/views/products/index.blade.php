@@ -239,7 +239,7 @@ Alternatively if you want to just have a single hero
                 </div>
             </div>
         </div>
-        <small>&copy; 2023 OOIDE COFFEE All rights reserved.</small>
+        <small>&copy; 2023 OIDE COFFEE All rights reserved.</small>
     </footer>
 
     </body>

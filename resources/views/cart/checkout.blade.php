@@ -14,7 +14,7 @@
         <p class="text-2xl mb-4">決済ページへリダイレクトします。</p>
         <div
             style="background-color: rgb(251, 255, 0); color: black; padding: 8px 16px; border-radius: 9999px; text-align: center; margin-bottom: 16px;">
-            OOIDE COFFEE
+            OIDE COFFEE
         </div>
 
 
