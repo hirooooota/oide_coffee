@@ -45,14 +45,14 @@
 
                 <x-dropdown width="48">
                     <x-slot name="trigger">
-                        <a class="inline-block no-underline hover:text-black" href="#">
+                        {{-- <a class="inline-block no-underline hover:text-black" href="#">
                             <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24"
                                 height="24" viewBox="0 0 24 24">
                                 <circle fill="none" cx="12" cy="7" r="3" />
                                 <path
                                     d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5S14.757 2 12 2zM12 10c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3S13.654 10 12 10zM21 21v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h2v-1c0-2.757 2.243-5 5-5h4c2.757 0 5 2.243 5 5v1H21z" />
                             </svg>
-                        </a>
+                        </a> --}}
                     </x-slot>
 
                     <x-slot name="content">
@@ -103,7 +103,7 @@
                 </a>
 
 
-                <!-- Hamburger -->
+                {{-- <!-- Hamburger -->
                 <div class="-mr-2 flex items-center sm:hidden">
                     <button @click="open = ! open"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -169,5 +169,5 @@
                     </div>
                 @endauth
             </div>
-        </div>
+        </div> --}}
     </nav>
