@@ -22,7 +22,7 @@ class ContactController extends Controller
     public function send(ContactFormRequest $request)
     {
         $contact = $request->all();
-        \Mail::to('oide_coffee@outlook.jp')->send(new ContactSendmail($contact));
+        \Mail::to('oidecoffee@outlook.com')->send(new ContactSendmail($contact));
         $request->session()->regenerateToken();
         return view('contact.thanks');
     }
