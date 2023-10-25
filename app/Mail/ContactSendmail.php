@@ -29,7 +29,7 @@ class ContactSendmail extends Mailable
     {
         return $this
             // ->from($this->email)
-            ->from('oide_coffee@outlook.jp')
+            ->from('oidecoffee@outlook.com')
             ->subject('自動送信メール')
             ->view('contact.mail')
             ->with([
