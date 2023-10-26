@@ -57,6 +57,8 @@ class CartController extends Controller
             'success_url'          => route('cart.success'),
             'cancel_url'           => route('cart_index'),
             'mode'                 => 'payment',
+            'billing_address_collection' => 'required',
+            'locale'               => 'ja',
         ]);
 
         return view('cart.checkout', [
